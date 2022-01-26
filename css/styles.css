@@ -103,3 +103,16 @@ h1, h2, h3 {
     font-size: 1.5rem;
     color: #325288;
 }
+
+/* UTILIDADES */
+#mesaje-copiado{
+    font-size: 1.2rem;
+}
+
+.escondido{
+    visibility: hidden;
+}
+
+.mostrarMensaje{
+    visibility: visible;
+}

@@ -4,6 +4,7 @@ const resultado = document.querySelector("#resultado");
 const btnEncriptar = document.querySelector("#encriptar");
 const btnDesencriptar = document.querySelector("#desencriptar");
 const btnCopiar = document.querySelector("#copiar");
+const mensajeCopiado = document.querySelector("#mesaje-copiado");
 let textoEncriptado = "";
 let textoDesencriptado = "";
 let textoLeido = "";
@@ -38,7 +39,6 @@ function encriptarMensaje(e){
     for(let i = 0; i < textoLeido.length; i++){
         arr[i] = textoLeido.charAt(i);
     }
-        
     //Encripta el mesaje
     for(let i = 0; i < textoLeido.length; i++){
             
@@ -87,9 +87,21 @@ function desencriptarMesaje(e){
 
 //Funcion para copiar el texto del input resultado
 function copiarTexto(e){
-    let textoCopiado = document.getElementById("resultado");
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999);
-    document.execCommand("copy");
+    if(e){
+        let textoCopiado = document.getElementById("resultado");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        
+        mensajeCopiado.classList.remove("escondido");
+        mensajeCopiado.classList.add("mostrarMensaje");
+        
+        setTimeout( () => {
+            mensajeCopiado.classList.remove("mostrarMensaje");
+            mensajeCopiado.classList.add("escondido");
+            resultado.value = "";
+
+        },3000);
+    } 
 }
 
