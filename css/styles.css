@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* Globales */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/img/sakura.jpg);
+    background-position-x: -30rem;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    font-size: 5rem;
+    margin: 4rem 0 2rem;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+h2 span{
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    margin-bottom: 2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+.titulo{
+    color: #325288;
+    text-align: center;
+}
+
+/* Main */
+
+.contenedor-cards{
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 14rem;
+    padding: 5rem;
+}
+
+.card{
+    background-color: #325288;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    color: #fff;
+    padding: 2rem;
+}
+
+.card input {
+    border-radius: 1rem;
+    border: .1rem solid #e1e1e1;
+    font-size: 1.5rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 90%;
+}
+
+.card button{
+    background-color: #D96098;
+    border: unset;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: .5rem;
+    padding: 1rem;
+}
+
+.card button:hover{
+    background-color: #e1e1e1;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer i {
+    margin-right: 1rem;
+}
+
+.info p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}

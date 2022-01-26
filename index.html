@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Código Secreto</h1>
+    </header>
+
+    <main>
+        <div class="contenedor contenedor-cards">
+            <div class="card">
+                <h2>Solo letras <span>MINUSCULAS</span> y <span>SIN</span> acentos</h2>
+                <div>
+                    <input id="frase" type="text" placeholder="Ingrese el texto aquí">
+                    <button id="encriptar" type="button">Encriptar</button>
+                    <button id="desencriptar" type="button">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Mensaje Encriptado / Desencriptado:</h2>
+                <div>
+                    <input id="resultado" type="text">
+                    <button id="copiar" type="button">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <i class="far fa-user-circle fa-2x"></i>
+            </div>
+            <div class="info">
+                <p> Donovan Romero Escogido</p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
