@@ -9,10 +9,11 @@ html {
 /* Globales */
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/img/sakura.jpg);
+    background-image: url(../img/sakura.jpg);
     background-position-x: -30rem;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 75%; 
+    background-size: cover;
 }
 
 h1{
