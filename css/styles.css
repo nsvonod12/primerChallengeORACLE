@@ -9,11 +9,7 @@ html {
 /* Globales */
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(../img/sakura.jpg);
-    background-position-x: -30rem;
-    background-repeat: no-repeat;
-    background-size: 75%; 
-    background-size: cover;
+    background-color: #EADEDE;
 }
 
 h1{
@@ -99,9 +95,11 @@ h1, h2, h3 {
 
 .footer i {
     margin-right: 1rem;
+    color: #325288;
 }
 
 .info p {
     font-family: 'Inconsolata', monospace;
     font-size: 1.5rem;
+    color: #325288;
 }
